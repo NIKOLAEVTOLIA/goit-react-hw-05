@@ -1,0 +1,30 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.react-spinner-loader {
+  width: 50px;
+}
+
+.react-spinner-loader div {
+  background-color: #007bff;
+  width: 6px;
+  height: 30px;
+  margin: 0 3px;
+  animation: loading 1.2s infinite ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
